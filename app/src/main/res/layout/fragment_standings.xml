@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/darker_gray">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:orientation="horizontal"
+            android:background="@android:color/holo_blue_light"
+            android:gravity="center">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="4dp"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:text="Club"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:text="P"
+                    tools:ignore="NestedWeights"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    style="@style/tv_stand_style"/>
+
+            <TextView
+                    android:text="W"
+                    tools:ignore="NestedWeights"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    style="@style/tv_stand_style"/>
+
+            <TextView
+                    android:text="D"
+                    tools:ignore="NestedWeights"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    style="@style/tv_stand_style"/>
+
+            <TextView
+                    android:text="L"
+                    tools:ignore="NestedWeights"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    style="@style/tv_stand_style"/>
+
+            <TextView
+                    android:text="P"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    tools:ignore="NestedWeights"
+                    style="@style/tv_stand_style"/>
+
+            <TextView
+                    android:text="GD"
+                    tools:ignore="NestedWeights"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    style="@style/tv_stand_style"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_standings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <ProgressBar
+            android:id="@+id/pro_standings"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+</LinearLayout>

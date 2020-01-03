@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <ProgressBar
+            android:id="@+id/pro_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+
+    <android.support.v4.widget.NestedScrollView
+            android:id="@+id/const_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+        <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:text="@string/description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_desc_title"
+                    android:fontFamily="@font/merriweather_bold"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                    tools:text="Content"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_desc_content"
+                    android:fontFamily="@font/merriweather_regular"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/darker_gray"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_desc_title"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+            <View
+                    android:id="@+id/v_info"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_desc_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="8dp"/>
+
+            <TextView
+                    android:text="@string/info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_info_title"
+                    android:fontFamily="@font/merriweather_bold"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black"
+                    app:layout_constraintTop_toBottomOf="@+id/v_info"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                    android:text="@string/sport"
+                    android:id="@+id/tv_sport_title"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_info_title"
+                    app:layout_constraintStart_toStartOf="parent"
+                    style="@style/tv_desc_title"/>
+
+            <TextView
+                    android:text="@string/formed_year"
+                    android:id="@+id/tv_formed_title"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_sport_title"
+                    app:layout_constraintStart_toStartOf="parent"
+                    style="@style/tv_desc_title"/>
+
+            <TextView
+                    android:text="@string/gender"
+                    android:id="@+id/tv_gender_title"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_formed_title"
+                    app:layout_constraintStart_toStartOf="parent"
+                    style="@style/tv_desc_title"/>
+
+            <TextView
+                    android:text="@string/country"
+                    android:id="@+id/tv_country_title"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_gender_title"
+                    app:layout_constraintStart_toStartOf="parent"
+                    style="@style/tv_desc_title"/>
+
+            <TextView
+                    tools:text="Soccer"
+                    android:id="@+id/tv_sport_content"
+                    app:layout_constraintTop_toTopOf="@+id/tv_sport_title"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_sport_title"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    style="@style/tv_desc_content"/>
+
+            <TextView
+                    tools:text="1992"
+                    android:id="@+id/tv_formed_content"
+                    app:layout_constraintTop_toTopOf="@+id/tv_formed_title"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_formed_title"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    style="@style/tv_desc_content"/>
+
+            <TextView
+                    tools:text="Male"
+                    android:id="@+id/tv_gender_content"
+                    app:layout_constraintTop_toTopOf="@+id/tv_gender_title"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_gender_title"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    style="@style/tv_desc_content"/>
+
+            <TextView
+                    tools:text="England"
+                    android:id="@+id/tv_country_content"
+                    app:layout_constraintTop_toTopOf="@+id/tv_country_title"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_country_title"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    style="@style/tv_desc_content"/>
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

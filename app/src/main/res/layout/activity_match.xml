@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ProgressBar
+            android:id="@+id/prog_match"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+
+    <RelativeLayout
+            android:id="@+id/relative_match"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:visibility="gone">
+
+        <include
+                android:id="@+id/match_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/item_match"/>
+
+        <include
+                android:layout_below="@+id/match_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/layout_match"
+                android:layout_marginTop="16dp"/>
+
+        <android.support.design.widget.FloatingActionButton
+                android:id="@+id/floating_btn_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                app:backgroundTint="@android:color/white"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

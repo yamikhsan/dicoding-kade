@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="1dp"
+        android:gravity="center"
+        android:background="@android:color/white"
+        android:baselineAligned="false">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+        <TextView
+                android:id="@+id/tv_stand_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                tools:text="1"/>
+
+        <TextView
+                android:id="@+id/tv_stand_club"
+                android:layout_toEndOf="@+id/tv_stand_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                tools:text="Liverpool"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+        <TextView
+                android:id="@+id/tv_stand_played"
+                tools:text="38"
+                tools:ignore="NestedWeights"
+                style="@style/tv_stand_style"/>
+
+        <TextView
+                android:id="@+id/tv_stand_win"
+                tools:text="30"
+                tools:ignore="NestedWeights"
+                style="@style/tv_stand_style"/>
+
+        <TextView
+                android:id="@+id/tv_stand_draw"
+                tools:text="7"
+                tools:ignore="NestedWeights"
+                style="@style/tv_stand_style"/>
+
+        <TextView
+                android:id="@+id/tv_stand_loss"
+                tools:text="1"
+                tools:ignore="NestedWeights"
+                style="@style/tv_stand_style"/>
+
+        <TextView
+                android:id="@+id/tv_stand_point"
+                tools:text="97"
+                android:textStyle="bold"
+                tools:ignore="NestedWeights"
+                style="@style/tv_stand_style"/>
+
+        <TextView
+                android:id="@+id/tv_stand_goal_dif"
+                tools:text="78"
+                tools:ignore="NestedWeights"
+                style="@style/tv_stand_style"/>
+
+    </LinearLayout>
+
+</LinearLayout>
